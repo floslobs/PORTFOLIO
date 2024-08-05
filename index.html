@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Florencia</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>FLORENCIA LOBOSCO</h1>
+            <h2>Carrera en curso de Analista en Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/florencia-lobosco-5ab351252/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/floslobs"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Florencia Lobosco,</span> estudiante de Analista de Sistemas con una sólida formación en programación y desarrollo web. Mi objetivo es transformar ideas en soluciones tecnológicas efectivas, utilizando mi conocimiento y experiencia en diversas áreas de la tecnología. <br>
+
+                A lo largo de mi formación, he adquirido habilidades en varias herramientas y lenguajes de programación. Mi experiencia incluye:
+                
+                Java: Programación básica, desarrollo de aplicaciones simples y orientación a objetos.
+                Pseint: Fundamentos de programación y lógica computacional.
+                SQL: Fundamentos de bases de datos relacionales y consultas SQL.
+                HTML, CSS, JavaScript: Desarrollo de páginas web interactivas y dinámicas.
+                GitHub: Manejo de repositorios y control de versión. <br>
+                Además de mis conocimientos técnicos, me caracteriza un enfoque constante en el aprendizaje y la mejora continua. Disfruto aprender siempre de todo un poco y me esfuerzo por perfeccionarme en cada aspecto de lo que hago. Esta pasión por el aprendizaje me permite adaptarme rápidamente a nuevas tecnologías y metodologías, contribuyendo de manera efectiva a cualquier equipo de trabajo.</p>
+                
+                
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-02-1991
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2314-548732
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            fan1_avril@hotmail.com
+                        </li>
+                    
+                        <li>
+                            <strong>Ubicación</strong>
+                            Carlos Casares(Actualmente)
+                        </li>
+                      
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                       
+                       
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                       
+                      
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="Florencia-curriculum-linkedIn.pdf" download>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                  
+                  
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura Superior en Análisis de Sistemas</h4>
+                        <span class="casa">Instituto Superior de Formación Docente y Técnica Nº 80,Carlos Casares.</span>
+                        <span class="fecha">2024 - 2026</span>
+                        <p>Actualmente, estoy cursando la Tecnicatura Superior en Análisis de Sistemas en el Instituto Superior de Formación Docente y Técnica Nº 80, ubicado en Carlos Casares. Durante esta formación, estoy adquiriendo conocimientos avanzados en programación, bases de datos, desarrollo de software y análisis de sistemas, preparándome para una carrera en el campo de la tecnología de la información.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación</h4>
+                        <span class="casa">Programa 4.0 Egg-Virtual</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Realicé un curso de programación, donde adquirí conocimientos en herramientas y técnicas de desarrollo web.
+                            GitHub: Manejo de repositorios y control de versiones.
+                            Java: Programación básica y desarrollo de aplicaciones simples y orientación a objetos.
+                            MySQL: Fundamentos de bases de datos relacionales y consultas SQL.
+                            HTML, CSS, JavaScript: Desarrollo de páginas web interactivas y dinámicas.
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Marketing Digital</h4>
+                        <span class="casa">INED Instituto Nacional de Educación Digital</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>He completado un curso integral de Marketing Digital que me ha proporcionado una sólida comprensión de las estrategias y herramientas modernas en el ámbito digital. A lo largo del curso, he adquirido habilidades en: Estrategias de marketing digital- Marketing Mix y las 7 P- E-commerce- Prosumidor- Marketplaces- Creación de Marca- Técnicas de Marketing Digital- Analítica Web y Google Analytics- Email Marketing.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Reparación de Celulares - Mantenimiento y Reparación de PC</h4>
+                        <span class="casa">INED Instituto Nacional de Educación Digital</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Realicé curso de reparación de celulares Android y IPhone, adquirí conocimientos en diagnóstico y reparación de fallas comunes en dispositivos móviles, incluyendo el reemplazo de componentes. <br> Finalicé el curso en Mantenimiento y Reparación de PC, formación en diagnóstico y solución de problemas de hardware y software en equipos de escritorio y  portátiles</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Primario y secundario completo</h4>
+                        <span class="casa">San Carlos De Bolivar Bs.As.</span>
+                        <span class="fecha">1998 - 2008</span>
+                        <p>Primario Completo: Finalizado en la Escuela Primaria Nº 18 de San Carlos de Bolivar.
+                            Secundario Completo: Finalizado en la Escuela Secundaria Nº 2 de San Carlos de Bolivar, con un enfoque en Gestión</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Empleada de Comercio y Panadería</h4>
+                        <span class="casa">Panaderia Valicenti</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Responsabilidades: <br>
+                            • Atención al público, ofreciendo un servicio amable y eficiente. <br>
+                            • Manejo de caja, incluyendo transacciones con efectivo y tarjetas, y control de balances diarios. <br>
+                            • Mantenimiento de la limpieza y orden del establecimiento, asegurando un ambiente agradable para los 
+                            clientes.<br>
+                            • Colaboración en la organización y reposición de productos en exhibición. <br>
+                            Habilidades Técnicas: <br>
+                            • Atención al Cliente: Experiencia en la comunicación efectiva y solución de problemas de clientes.<br>
+                            • Organización y Responsabilidad: Capacidad para gestionar múltiples tareas y mantener un entorno 
+                                de trabajo ordenado.<br>
+                            • Trabajo en Equipo: Colaboración efectiva con colegas para alcanzar objetivos comunes.<br>
+                            • Aprendizaje Continuo: Motivación por adquirir nuevos conocimientos y mejorar habilidades.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operadora</h4>
+                        <span class="casa">Alarmas STD</span>
+                        <span class="fecha">2008 - 2011</span>
+                        <p>Responsabilidades: <br>
+                            • Atención al cliente vía telefónica, brindando soporte técnico y resolución de consultas.<br>
+                            • Manejo de software especializado para monitoreo de alarmas, asegurando el correcto funcionamiento 
+                            y respuesta ante alertas.<br>
+                            • Conocimiento y manejo de equipos instalados, incluyendo configuración y mantenimiento.</p> 
+                            • Organización y Responsabilidad: Capacidad para gestionar múltiples tareas y mantener un entorno 
+                                de trabajo ordenado.<br>
+                            • Trabajo en Equipo: Colaboración efectiva con colegas para alcanzar objetivos comunes.<br>
+                            • Aprendizaje Continuo: Motivación por adquirir nuevos conocimientos y mejorar habilidades.
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/registro.jpeg" alt="Proyecto" id="projectImage">
+                    <video id="projectVideo" controls>
+                     <source src="vid/registro.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                        <h3 id="h333">Registro de Clientes</h3>
+                        
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio.jpeg" alt="Proyecto" id="projectImage">
+                    <video id="projectVideo" controls>
+                     <source src="vid/portfolio.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                        <h3 id="h333">Página Personal</h3>
+                       
+                    
+                </div>
+                <div class="proyecto">
+                    <img src="img/Projectemergencia.jpeg" alt="Proyecto" id="projectImage">
+                    <video id="projectVideo" controls>
+                     <source src="vid/projectemergencia.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                        <h3 id="h333">App Emergencias</h3>
+                        
+                </div>
+            </div>
+               
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contact-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                         <label for="message">Mensaje:</label>
+                         <textarea id="message" name="message" required></textarea>
+    
+                           <button id="envioss" type="submit">Enviar</button>
+                    </form> 
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ubicación: Carlos Casares
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 2314-548732
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: fan1_avril@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+
+            <a href="https://www.linkedin.com/in/florencia-lobosco-5ab351252/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/floslobs"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="email.js"></script>
+
+</html>
