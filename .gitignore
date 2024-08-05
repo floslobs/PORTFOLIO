@@ -150,5 +150,8 @@ email.js
 *.mkv
 *.webm
 
+# Ignorar archivo de configuración con claves
+config.js
+
 # Ignorar archivos PDF
 *.pdf
