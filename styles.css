@@ -605,21 +605,11 @@ html{
 }
 
  /* Estilos para el botón de envío */
- #envioss {
-    background-color: #000000; /* Color inicial del botón */
-    color: white; /* Color del texto */
-    padding: 15px 20px; /* Espacio interno */
-    border: 1px solid #fff;
-    cursor: pointer; /* Cursor de mano */
-    transition: background-color 0.3s; /* Transición suave */
-}
 
-#envioss:hover {
-    background-color: #ff2c7d; /* Color de fondo al pasar el ratón */
-}
 .contacto .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    justify-content: center;
 }
 .contacto h2{
     font-size: 48px;
@@ -629,51 +619,19 @@ html{
 }
 .contacto .fila{
     display: flex;
+    justify-content: center;
+
 }
 .contacto .col{
     width: 50%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #696565;
-    color: #fff;
-    font-size: 18px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #ff2c7d;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
+
 .contacto .col img{
     width: 100%;
     height: 70%;
+    border:2px solid #ff2c7d;
 }
 .contacto .col .info{
     position: absolute;

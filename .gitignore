@@ -129,8 +129,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Ignorar el archivo de configuración con claves y datos sensibles
-config.js
+
 
 
 
