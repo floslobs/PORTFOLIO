@@ -132,29 +132,5 @@ dist
 # Ignorar el archivo de configuración con claves y datos sensibles
 config.js
 
-<<<<<<< HEAD
-=======
-# Ignorar archivos de imagen
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
 
-# Ignorar archivos de video
-*.mp4
-*.avi
-*.mov
-*.wmv
-*.flv
-*.mkv
-*.webm
 
-# Ignorar archivo de configuración con claves
-config.js
-
-# Ignorar archivos PDF
-*.pdf
->>>>>>> 1a40484220505f8b32d943fa9dd09d1913bb16d7
