@@ -56,4 +56,20 @@ window.onscroll = function(){
 } 
 
 
- 
+
+ // Asegúrate de que config.js esté cargado antes de este script
+emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+
+// Maneja el envío del formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Envía el formulario usando EmailJS
+    emailjs.sendForm(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, this)
+        .then(function(response) {
+            alert('Correo enviado correctamente');
+        }, function(error) {
+            console.error('Error al enviar el correo:', error);
+            alert('Error al enviar el correo. Verifica la consola para detalles.');
+        });
+});
